@@ -1,14 +1,24 @@
 /* styles/style.css */
 
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Raleway:wght@400&display=swap');
+
+/* Simple Reset */
+body, h2 {
+    margin: 0;
+    padding: 0;
+}
+
 /* General styles */
 body {
     background-color: #fcfbfb;
-    font-family: Arial, sans-serif;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 22px; /* Adjusting font size */
 }
 
 .home-title {
     font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
-    font-size: 2em;
+    font-size: 2em; /* Adjusting font size */
 }
 
 /* Container for centering the content */
@@ -31,6 +41,7 @@ nav a {
     color: #fcfbfb;
     font-size: 1.5em;
     text-align: center;
+    padding: 35px; /* Adding padding */
 }
 
 nav a:hover {
@@ -49,6 +60,7 @@ nav a:hover {
 
 .home-title, #hero-msg h4 {
     color: white;
+    margin-top: 10px; /* Adding margin */
 }
 
 .button-box {
@@ -59,8 +71,11 @@ nav a:hover {
     background-color: steelblue;
     color: white;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 15px 30px; /* Adding padding */
     display: inline-block;
+    font-size: 18px; /* Adjusting font size */
+    margin-top: 50px; /* Adding margin */
+    border-radius: 5px; /* Adding border-radius */
 }
 
 .book:hover, .join:hover {
@@ -76,10 +91,12 @@ nav a:hover {
 
 .rivers-card, .camping-card, .rapids-card {
     text-align: center;
+    margin: 200px 0; /* Adding margin */
 }
 
 .icon {
     width: 80px;
+    padding-top: 10px; /* Adding padding */
 }
 
 /* Message background */
@@ -91,20 +108,27 @@ nav a:hover {
 /* Message section */
 .msg {
     background-color: #fff;
-    padding: 20px;
+    padding: 35px; /* Adding padding */
     text-align: center;
+    line-height: 1.5em; /* Adjusting line-height */
 }
 
 .msg h2, .msg p {
     color: #333;
 }
 
+.msg p {
+    padding-bottom: 15px; /* Adding padding */
+    font-size: 0.8em; /* Adjusting font size */
+}
+
 /* Footer */
 footer {
     background-color: steelblue;
     color: white;
-    padding: 10px;
+    padding: 25px 50px; /* Adding padding */
     text-align: center;
+    margin-top: 200px; /* Adding margin */
 }
 
 footer p {
@@ -120,7 +144,20 @@ footer a:hover {
     text-decoration: underline;
 }
 
-.social img {
+footer .social img {
     width: 40px;
-    margin: 0 10px;
+    padding-top: 15px; /* Adding padding */
+}
+
+/* Additional styles */
+.card-img {
+    border: 10px solid #d9c2a3; /* Adding border */
+}
+
+main section img {
+    box-sizing: border-box; /* Adding box-sizing */
+}
+
+#logo_link {
+    padding-top: 5px; /* Adding padding */
 }
