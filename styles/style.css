@@ -6,6 +6,11 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.home-title {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 2em;
+}
+
 /* Container for centering the content */
 #content {
     max-width: 1600px;
