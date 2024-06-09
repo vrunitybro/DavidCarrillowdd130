@@ -184,8 +184,8 @@ main section img {
 }
 
 .book:hover, .join:hover {
-    background-color: #ddfcad;
-    color: #144266;
+    background-color: green;
+    color: lightgreen;
 }
 
 /* Card Images */
@@ -202,7 +202,7 @@ main section img {
 
 /* Footer */
 footer {
-    background-color: #144266;
+    background-color: black;
     color: white;
     padding: 25px 50px;
     margin-top: 200px;
