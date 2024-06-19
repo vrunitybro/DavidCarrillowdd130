@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Raleway:wght@400&display=swap');
 
 /* Simple Reset */
-body, h2 {
+body, h1, h2 {
     margin: 0;
     padding: 0;
 }
@@ -83,8 +83,7 @@ nav a:hover {
 
 #hero-msg h1 {
     text-align: center;
-    color:white;
-
+    color: white;
 }
 
 #hero-msg h4 {
@@ -99,7 +98,6 @@ nav a:hover {
 
 .button-box {
     text-align: center;
-    
 }
 
 /* Main Grid */
@@ -232,6 +230,44 @@ footer .social img {
     padding-top: 15px;
 }
 
+/* FAQ Section */
+.faq-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 40px 20px;
+}
+
+.faq-title {
+    grid-column: 1 / -1;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.faq-image {
+    grid-column: 1 / -1;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.faq-item {
+    background-color: #e6e6e6;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.faq-answer {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
 /* Media Queries */
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
@@ -272,5 +308,11 @@ footer .social img {
     }
     footer {
         margin-top: 25px;
+    }
+    .faq-section {
+        display: block;
+    }
+    .faq-title {
+        margin-bottom: 20px;
     }
 }
