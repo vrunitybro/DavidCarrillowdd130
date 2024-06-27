@@ -38,10 +38,11 @@
                             <label for="msg">Message:</label>
                             <textarea id="msg" name="user_message" required></textarea>
                         </li>
-                        <label>
-                            Your file:
-                            <input type="file" name="upload">
-                          </label>
+                        <li>
+                            <label>Your file:
+                                <input type="file" name="upload">
+                            </label>
+                        </li>
                         <li class="button">
                             <button type="submit">Send your message</button>
                         </li>
@@ -77,10 +78,26 @@
         formElement.addEventListener('submit', function(e) {
             // stop the form from doing the default action.
             e.preventDefault();
-            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
-            // make the feedback element visible.
-            feedbackElement.style.display = "block";
+            // Send form data using Fetch API
+            fetch(formElement.action, {
+                method: formElement.method,
+                body: new FormData(formElement),
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value + '! Thank you for your message. We will get back with you as soon as possible!';
+                    feedbackElement.style.display = "block";
+                    formElement.reset(); // reset the form after successful submission
+                } else {
+                    feedbackElement.innerHTML = 'Oops! There was a problem with your submission. Please try again.';
+                    feedbackElement.style.display = "block";
+                }
+            }).catch(error => {
+                feedbackElement.innerHTML = 'Oops! There was a problem with your submission. Please try again.';
+                feedbackElement.style.display = "block";
+            });
             // add a class to move everything down so our message doesn't cover it.
             document.body.classList.toggle('moveDown');
         });
