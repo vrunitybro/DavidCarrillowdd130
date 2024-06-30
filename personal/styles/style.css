@@ -1,0 +1,154 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0a;
+    color: #fff;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #1f1f1f;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #1e90ff;
+}
+
+.hero {
+    height: 100vh;
+    background: url('../images/hero-bg.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin: 20px 0 0;
+}
+
+.projects {
+    padding: 50px 0;
+    background-color: #2a2a2a;
+}
+
+.projects h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact {
+    padding: 50px 0;
+    background-color: #1a1a1a;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form label {
+    margin-bottom: 5px;
+}
+
+.contact form input,
+.contact form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1e90ff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact form button:hover {
+    background-color: #1c86ee;
+}
+
+footer {
+    background-color: #1f1f1f;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+footer .social-links img {
+    max-height: 30px;
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
