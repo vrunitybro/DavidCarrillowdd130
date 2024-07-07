@@ -6,68 +6,56 @@
     <meta name="description" content="VRUnity Bro - Portfolio for game development, VR enthusiasts, and potential employers.">
     <meta name="keywords" content="VR, Unity, Game Development, Portfolio, VRUnity Bro">
     <title>VRUnity Bro - Projects</title>
-    <!--link rel="stylesheet" href="styles/style.css"-->
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <a href="index.html" class="logo"><img src="images/vrunityProfile.jpg" alt="VRUnity Bro Logo"></a>
+    <div class="container">
+        <header class="logo">
+            <a href="#home"><img src="images/vrunityProfile.jpg" alt="VRUnity Bro Logo"></a>
             <nav class="navbar">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Main Menu</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-        </div>
-    </header>
-
-    <div class="main-content">
-        <section id="projects" class="projects">
-            <div class="container">
-                <h1>My Games</h1>
-                <p>This page showcases the diverse range of games I have developed, including VR, MR, and AR experiences. Each game reflects my commitment to creating immersive and engaging experiences for players.</p>
-
-                <div class="game-category">
-                    <h2>VR Projects</h2>
-                    <p>In the VR category, you will find projects that transport players to entirely new worlds. These games leverage the latest in VR technology to provide an unparalleled sense of presence and interaction.</p>
+        </header>
+        
+        <main class="main-content">
+            <section id="projects" class="virtualbg">
+                <div class="virtualbg-content">
+                    <h1>My Projects</h1>
+                    <p>Explore our latest VR and game development projects</p>
+                    
+                    <!-- Game: 2D Platformer -->
+                    <div class="game-section">
+                        <h2>2D Platformer</h2>
+                        <p>A fun and challenging platform game where you explore Jungle and desert</p>
+                        <p>to recover the lost fruits of happines.</p>
+                        <img src="images/game2people.jpg" alt="2D Platformer Screenshot">
+                        <p><a href="2d_platformer/index.html" target="_blank">Play Game</a></p>
+                    </div>
+                    
+                    <!-- Game: FPS -->
+                    <div class="game-section">
+                        <h2>First-Person Shooter (FPS)</h2>
+                        <p>Immerse yourself in the action-packed world of FPS</p>
+                        <img src="images/gamefemaleblue.jpg" alt="FPS Game Screenshot">
+                        <p><a href="fps/index.html" target="_blank">Play Game</a></p>
+                    </div>
                 </div>
-
-                <div class="game-category">
-                    <h2>MR Projects</h2>
-                    <p>My MR projects blend the physical and digital worlds, offering interactive experiences that enhance real-world environments. These games utilize advanced sensors and spatial mapping to create seamless integrations of virtual content into the physical space.</p>
-                </div>
-
-                <div class="game-category">
-                    <h2>AR Projects</h2>
-                    <p>The AR projects featured here include innovative 2D platformer games that bring augmented reality to life. These apps transform ordinary surroundings into dynamic game levels, providing a unique and engaging experience for players.</p>
-                </div>
-
-                <div class="game-category">
-                    <h2>3D FPS Games</h2>
-                    <p>Among my portfolio are several 3D first-person shooter games that demonstrate my proficiency in creating complex, interactive environments. These games feature realistic graphics, intuitive controls, and compelling gameplay mechanics.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects-images" class="projects-images">
-            <div class="container">
-                <img src="images/game2people.jpg" alt="VR Project Image">
-                <img src="images/gamefemaleblue.jpg" alt="MR Project Image">
-            </div>
-        </section>
-    </div>
-
-    <footer>
-        <div class="container">
+            </section>
+        </main>
+        
+        <footer class="footer">
             <p>&copy; 2024 VRUnity Bro</p>
             <div class="social-links">
                 <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
                 <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter"></a>
                 <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 
     <script src="scripts/main.js"></script>
 </body>
