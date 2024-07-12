@@ -1,15 +1,15 @@
 /* General styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif; /* Aplicar Roboto a todo el cuerpo del documento */
     margin: 0;
-    padding: 14px; /* Add padding to body */
+    padding: 14px; /* Añadir padding al cuerpo */
     background-color: #0a0a0a;
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 28px); /* Adjust height to account for padding */
-    box-sizing: border-box; /* Include padding in the height and width calculations */
+    height: calc(100vh - 28px); /* Ajustar altura para el padding */
+    box-sizing: border-box; /* Incluir padding en los cálculos de altura y anchura */
 }
 
 /* Container grid setup */
@@ -63,7 +63,7 @@ body {
 .main-content {
     grid-column: 2 / 4;
     grid-row: 1 / 2;
-    background-image: url('../images/purpleandbluedesk.jpg'); /* Adjust path as per your project structure */
+    background-image: url('../images/purpleandbluedesk.jpg'); /* Ajustar ruta según la estructura de tu proyecto */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -81,7 +81,7 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.5); /* dark overlay */
+    background: rgba(0, 0, 0, 0.5); /* Overlay oscuro */
 }
 
 .virtualbg {
@@ -101,8 +101,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('../images/purple_blue_small.jpg') no-repeat center center/cover; /* Adjust path as per your project structure */
-    opacity: 0.5; /* Set the opacity to 50% */
+    background: url('../images/purple_blue_small.jpg') no-repeat center center/cover; /* Ajustar ruta según la estructura de tu proyecto */
+    opacity: 0.5; /* Opacidad al 50% */
     z-index: 0;
 }
 
@@ -113,11 +113,13 @@ body {
 }
 
 .virtualbg-content h1 {
+    font-family: 'Libre Barcode 128 Text', sans-serif; /* Aplicar Libre Barcode 128 Text a los títulos */
     font-size: 3em;
     margin: 0;
 }
 
 .virtualbg-content p {
+    font-family: 'Roboto', sans-serif; /* Aplicar Roboto a los párrafos */
     font-size: 1.5em;
     margin: 20px 0 0;
 }
@@ -130,11 +132,13 @@ body {
 }
 
 .game-section h2 {
+    font-family: 'Libre Barcode 128 Text', sans-serif; /* Aplicar Libre Barcode 128 Text a los títulos de juegos */
     font-size: 2em;
     margin-bottom: 10px;
 }
 
 .game-section p {
+    font-family: 'Roboto', sans-serif; /* Aplicar Roboto a las descripciones de juegos */
     font-size: 1.2em;
     margin-bottom: 20px;
 }
@@ -154,3 +158,106 @@ body {
 .game-section a:hover {
     color: #fff;
 }
+
+/* Footer section */
+.footer {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer .social-links {
+    margin-top: 20px;
+}
+
+.footer .social-links a {
+    margin: 0 50px;
+    display: inline-block;
+}
+
+.footer .social-links img {
+    max-height: 50px;
+}
+
+/* Style the Image Used to Trigger the Modal */
+#myImg1, #myImg2 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg1:hover, #myImg2:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+  
